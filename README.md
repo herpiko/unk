@@ -11,7 +11,7 @@ UNK stands for Ultimate Ngoprek Keyboard, my own version of <a href="https://ult
 - Fully programmable (QMK) ✅
 - Almost zero learning curve (horizontally staggered, ~ortholinear~, ~symbols through modifier/layer~) ✅
 - Ergonomic as UHK (splitted) ✅
-- Generic size of keycaps (combinations from 145 keycaps set should be fitted) ✅
+- Generic size of keycaps (combinations from 145 keycaps set should be fitted) 👎
 - Interchangeable middle modules (touchpad, trackball, smartphone dock) 👎
 
 ## Layout
@@ -20,7 +20,9 @@ UNK stands for Ultimate Ngoprek Keyboard, my own version of <a href="https://ult
 - Left half: http://www.keyboard-layout-editor.com/#/gists/f117f3cbc2d0b1bf17206992068f9017
 - Right half: http://www.keyboard-layout-editor.com/#/gists/e9e79566d1be71f77f1f2d33660011e5
 
-<img src="/images/layout.png">
+<img src="/images/layout-split.png">
+
+The empty-ghosted keys can be used to add single key module on the right half for those who used to type B letter with their right hand.
 
 ## Plate
 
@@ -46,12 +48,12 @@ The greens are on the top plate. The oranges are on the bottom.
 
 | Item  | Price (rupiah) |
 | ------------- | -------------: |
-| Existing DSA keycaps set from a <a href="https://www.google.com/search?q=vortex+tab+75&source=lnms&tbm=isch">Vortex Tab 75 keyboard</a> | 0 |
+| Existing DSA keycaps set from a <a href="https://www.google.com/search?q=vortex+tab+75&source=lnms&tbm=isch">Vortex Tab 75 keyboard</a>. Alternatives:<br/> - https://www.amazon.com/YMDK-Profile-Minila-Subimation-Keyset/dp/B082D21GRP <br/>- https://www.amazon.com/HK-Gaming-Dye-Sublimation-Keycaps/dp/B08156NG7K/ref=sr_1_12?dchild=1&keywords=dsa+keycaps&qid=1593452374&sr=8-12<br/>*HINT: It should contains 2 extra 2.25u keycaps for the splitted space keys along with an 1.75 shift keycap.* | 0 |
 | <a href="https://www.tokopedia.com/vortexseries/ks-9-gateron-brown-switch-tactile-plate-mounted">Gateron Brown switches</a>, 68 @ Rp 2.400 | 163.200 |
 | <a href="https://www.tokopedia.com/tokopuwei/dioda-in4148-1n-4148-in-4148-dip-diode-1n4148-do35-ac85-harga-1-pcs">IN4148 diodes</a>, 200 @ Rp 100 | 20.000 |
 | <a href="https://www.tokopedia.com/solarperfect/pro-micro-promicro-atmega32u4-16mhz-5v-arduino-module">Pro micro ATMEGA32U4 16Mhz 5V</a>, 2 @ Rp 52.800 | 105.600 |
 | Stainless steel plates + laser cutting service at <a href="https://www.instagram.com/laserindonesia/">Laser Indonesia</a>, 1.5mm top plate + 2.0mm bottom plate | 463.000 |
-| <a href="https://www.tokopedia.com/pixlup/genuine-cherry-pcb-mount-stabilizer-stabilizers-fullsize">Cherry switch stabilizers (1x6u, 6x2u)</a> | 210.000 |
+| <a href="https://www.tokopedia.com/pixlup/genuine-cherry-pcb-mount-stabilizer-stabilizers-fullsize">Cherry switch stabilizers (1x6u, 6x2u)</a> <- WRONG PART. This should be the plate mount version. | 210.000 |
 | <a href="https://www.tokopedia.com/hpasesoris/m3x6mm-m3-6-black-nylon-hex-nut-m3-thread-female-standoff-spacer-aq21">M3 x 6mm female to female spacer</a>, 30 @ Rp 1.200 | 36.000 |
 | <a href="https://www.tokopedia.com/pcmjakarta/kabel-tunggal-mini-tembaga-0-5mm-40meter">Single copper wire 0.5mm</a>, 40 meter | 30.000 |
 | <a href="https://www.tokopedia.com/stickerkacafilm/stikerstickermotormobilstiker-karboncarbon3d-hitam-dof">Carbon vinyl sticker 30 meter</a> | 45.000 |
@@ -66,7 +68,7 @@ The greens are on the top plate. The oranges are on the bottom.
 | <a href="https://www.tokopedia.com/optimuspri/joyseus-2-in-1-coiled-data-cable-1-m-micro-usb-type-c">Joyseus 2 in 1 coiled data cable 1M (micro USB & type C)</a> | 45.000 |
 | <a href="https://www.tokopedia.com/3mtapes/3m-sj-5306-bumpon-clear">3M SJ-5306 Bumpon Clear</a> | 18.000 |
 
-*The list is excluding shipping cost and wrong parts those I purchased. Some items were purcashed more than the need for spare/stockpile. If the whole things counted, it reached almost 2 million rupiahs.*
+*The list is excluding shipping cost and wrong parts those I purchased. Some items were purchased more than the need for spare/stockpile. If the whole things counted, it reached almost 2 million rupiahs.*
 
 ## Firmware
 
@@ -78,7 +80,7 @@ $ ./util/qmk_install.sh
 
 Then copy the UNK firmware directory to QMK
 ```
-$ cp -vR /path/to/ultimate-ngoprek-keyboard/firmware keyboards/unk
+$ cp -vR /path/to/unk/firmware keyboards/unk
 ```
 
 ### Compile
@@ -111,6 +113,24 @@ $ sudo avrdude -p atmega32u4 -c avr109 -U ./.build/unk_rev1_default.hex -P /dev/
 
 - `Layer` + `1` to switch to Qwerty layout
 - `Layer` + `2` to switch to Colemak layout
+
+## Useful links
+
+The sources I read for building this keyboard:
+
+- Keyboard layout editor, http://www.keyboard-layout-editor.com/
+- Plate builder, http://builder.swillkb.com/
+- Laser cutting service, https://lasergist.com/shop/lasergist/
+- Pro micro official guides/FAQ, https://learn.sparkfun.com/tutorials/pro-micro--fio-v3-hookup-guide/troubleshooting-and-faq
+- Handwiring split guide based on lets_split, https://johannes-jansson.github.io/projects/2018/07/23/hand-wiring-lets-split.html
+- Handwiring guide, https://geekhack.org/index.php?topic=87689.0
+- https://www.reddit.com/r/olkb/comments/5s8q76/help_pro_micro_pinout_for_qmk/
+- Thinkpad trackpoint, https://electronics.stackexchange.com/questions/189790/determining-trackpoint-pinout
+- Pro micro built-in LEDs, https://www.electronicsweekly.com/blogs/engineer-in-wonderland/arduino-micro-direct-access-board-leds-2017-08/
+- TRRS in  Pro Micro + QMK, https://beta.docs.qmk.fm/using-qmk/hardware-features/feature_split_keyboard
+- Blackberry trackpad, https://vlukash.com/2019/01/15/trackpad-in-keycap-corne-crkbd-keyboard/
+- Adding layers, https://thomasbaart.nl/2018/12/06/qmk-basics-how-to-add-a-layer-to-your-keymap/
+- Layers, https://jayliu50.github.io/qmk-cheatsheet/
 
 ## Build Logs
 
@@ -158,7 +178,7 @@ Fully working left half. I was still playing and learn how to work with QMK firm
 <img width="650" src="/images/writedown.jpg">
 
 
-### 20299623
+### 20200623
 
 DO NOT USE SUPER GLUE TO GLUE YOUR SWITCHES TO THE PLATE.
 
@@ -174,11 +194,13 @@ I'll use super glue only to things that need strong hold on the plate like USB-C
 
 I've seen some videos of making handwired keyboard and got some idea for better handwiring. I'll be using ~~0.35mm magnet coil wire~~ single core copper wire.
 
-### 20299624
+### 20200624
 
 Need to cut out the height of the switches and stabilizer so I can push the  thickness limit. It'll be using 6mm spacer. The original uncut version is on the left. The middle is the common cut. The right one was forced to be cut like that to make more room for the neodyum magnet.
 
 <img width="650" src="/images/switch-cut.jpg">
+
+I noticed lately that I purchased the wrong stabilizer. I should use the plate mount version instead of PCB mount.
 
 <img width="650" src="/images/stabilizer-cut.jpg">
 
@@ -239,6 +261,9 @@ Side views. You can see that the reset button is easy to reach with your nail.
 <img width="650" src="/images/side-view-2.jpg">
 
 
+All the keys has been tested.
+
+<img width="650" src="/images/keyboard-checker.png">
 
 Finished!
 
