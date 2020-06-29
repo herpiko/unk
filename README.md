@@ -22,8 +22,6 @@ UNK stands for Ultimate Ngoprek Keyboard, my own version of <a href="https://ult
 
 <img src="/images/layout-split.png">
 
-The empty-ghosted keys can be used to add single key module on the right half for those who used to type B letter with their right hand.
-
 ## Plate
 
 Download:
@@ -48,12 +46,12 @@ The greens are on the top plate. The oranges are on the bottom.
 
 | Item  | Price (rupiah) |
 | ------------- | -------------: |
-| Existing DSA keycaps set from a <a href="https://www.google.com/search?q=vortex+tab+75&source=lnms&tbm=isch">Vortex Tab 75 keyboard</a>. Alternatives:<br/> - https://www.amazon.com/YMDK-Profile-Minila-Subimation-Keyset/dp/B082D21GRP <br/>- https://www.amazon.com/HK-Gaming-Dye-Sublimation-Keycaps/dp/B08156NG7K/ref=sr_1_12?dchild=1&keywords=dsa+keycaps&qid=1593452374&sr=8-12<br/>*HINT: It should contains 2 extra 2.25u keycaps for the splitted space keys along with an 1.75 shift keycap.* | 0 |
-| <a href="https://www.tokopedia.com/vortexseries/ks-9-gateron-brown-switch-tactile-plate-mounted">Gateron Brown switches</a>, 68 @ Rp 2.400 | 163.200 |
+| I'm using existing DSA keycaps set from my <a href="https://www.google.com/search?q=vortex+tab+75&source=lnms&tbm=isch">Vortex Tab 75 keyboard</a>.<br/><br/>Alternatives:<br/> - https://www.amazon.com/YMDK-Profile-Minila-Subimation-Keyset/dp/B082D21GRP <br/>- https://www.amazon.com/HK-Gaming-Dye-Sublimation-Keycaps/dp/B08156NG7K/ref=sr_1_12?dchild=1&keywords=dsa+keycaps&qid=1593452374&sr=8-12<br/>*HINT: It should contains 2 extra 2.25u keycaps for the splitted space keys along with an 1.75 shift keycap.* | 0 |
+| <a href="https://www.tokopedia.com/vortexseries/ks-9-gateron-brown-switch-tactile-plate-mounted">Gateron Brown switches</a>, 80 @ Rp 2.400 | 192.000 |
 | <a href="https://www.tokopedia.com/tokopuwei/dioda-in4148-1n-4148-in-4148-dip-diode-1n4148-do35-ac85-harga-1-pcs">IN4148 diodes</a>, 200 @ Rp 100 | 20.000 |
 | <a href="https://www.tokopedia.com/solarperfect/pro-micro-promicro-atmega32u4-16mhz-5v-arduino-module">Pro micro ATMEGA32U4 16Mhz 5V</a>, 2 @ Rp 52.800 | 105.600 |
 | Stainless steel plates + laser cutting service at <a href="https://www.instagram.com/laserindonesia/">Laser Indonesia</a>, 1.5mm top plate + 2.0mm bottom plate | 463.000 |
-| <a href="https://www.tokopedia.com/pixlup/genuine-cherry-pcb-mount-stabilizer-stabilizers-fullsize">Cherry switch stabilizers (1x6u, 6x2u)</a> <- WRONG PART. This should be the plate mount version. | 210.000 |
+| ~~<a href="https://www.tokopedia.com/pixlup/genuine-cherry-pcb-mount-stabilizer-stabilizers-fullsize">Cherry switch stabilizers (1x6u, 6x2u)</a>~~  *<-- WRONG PART.* <a href="https://www.tokopedia.com/pixlup/genuine-cherry-plate-mount-stabilizers-stabilizer">The right one is the plate mount version.</a> | 210.000 |
 | <a href="https://www.tokopedia.com/hpasesoris/m3x6mm-m3-6-black-nylon-hex-nut-m3-thread-female-standoff-spacer-aq21">M3 x 6mm female to female spacer</a>, 30 @ Rp 1.200 | 36.000 |
 | <a href="https://www.tokopedia.com/pcmjakarta/kabel-tunggal-mini-tembaga-0-5mm-40meter">Single copper wire 0.5mm</a>, 40 meter | 30.000 |
 | <a href="https://www.tokopedia.com/stickerkacafilm/stikerstickermotormobilstiker-karboncarbon3d-hitam-dof">Carbon vinyl sticker 30 meter</a> | 45.000 |
@@ -80,57 +78,66 @@ $ ./util/qmk_install.sh
 
 Then copy the UNK firmware directory to QMK
 ```
-$ cp -vR /path/to/unk/firmware keyboards/unk
+$ cp -vR /path/to/unk/firmware keyboards/handwired/unk
 ```
 
 ### Compile
 ```
-$ make unk/rev1:default
+$ make handwired/unk/rev1:default
 ```
 
 ### Flashing the left half
 
 Press the reset button twice and fast, then:
 ```
-$ sudo avrdude -p atmega32u4 -c avr109 -U ./.build/unk_rev1_default.hex -P /dev/ttyACM0
+$ sudo avrdude -p atmega32u4 -c avr109 -U ./.build/handwired_unk_rev1_default.hex -P /dev/ttyACM0
 
 ```
 
 ### Flashing the right half
 
-Uncomment the line that state `#define MASTER_LEFT` in `keyboards/unk/rev1/config.h`, then:
+Uncomment the line that state `#define MASTER_LEFT` in `keyboards/handwired/unk/rev1/config.h`, then:
 
 ```
-$ make unk/rev1:default
+$ make handwired/unk/rev1:default
 ```
 
 Press the reset button twice and fast, then:
 
 ```
-$ sudo avrdude -p atmega32u4 -c avr109 -U ./.build/unk_rev1_default.hex -P /dev/ttyACM0
+$ sudo avrdude -p atmega32u4 -c avr109 -U ./.build/handwired_unk_rev1_default.hex -P /dev/ttyACM0
 ```
 ## Usage
 
-- `Layer` + `1` to switch to Qwerty layout
-- `Layer` + `2` to switch to Colemak layout
+- `Layer` + `Home` to switch to Qwerty layout
+- `Layer` + `End` to switch to Colemak layout
 
 ## Useful links
 
-The sources I read for building this keyboard:
+The sources I read and inspired me for building this keyboard:
 
 - Keyboard layout editor, http://www.keyboard-layout-editor.com/
 - Plate builder, http://builder.swillkb.com/
 - Laser cutting service, https://lasergist.com/shop/lasergist/
 - Pro micro official guides/FAQ, https://learn.sparkfun.com/tutorials/pro-micro--fio-v3-hookup-guide/troubleshooting-and-faq
+- Promethium51, https://priyadi.smugmug.com/Mechanical-Keyboard/Promethium-Keyboard/Build-Log/n-4fFNQC
 - Handwiring split guide based on lets_split, https://johannes-jansson.github.io/projects/2018/07/23/hand-wiring-lets-split.html
 - Handwiring guide, https://geekhack.org/index.php?topic=87689.0
 - https://www.reddit.com/r/olkb/comments/5s8q76/help_pro_micro_pinout_for_qmk/
-- Thinkpad trackpoint, https://electronics.stackexchange.com/questions/189790/determining-trackpoint-pinout
+- Thinkpad trackpoint,
+  - https://electronics.stackexchange.com/questions/189790/determining-trackpoint-pinout
+  - https://github.com/qmk/qmk_firmware/tree/master/keyboards/handwired/trackpoint
+  - https://github.com/alonswartz/trackpoint
+  - https://github.com/alonswartz/trackpoint#tmk-firmware-changes-and-tweaks
+  - https://docs.qmk.fm/#/feature_ps2_mouse
+  - https://deskthority.net/wiki/TrackPoint_Hardware#ThinkPad_R61_TrackPoint
 - Pro micro built-in LEDs, https://www.electronicsweekly.com/blogs/engineer-in-wonderland/arduino-micro-direct-access-board-leds-2017-08/
 - TRRS in  Pro Micro + QMK, https://beta.docs.qmk.fm/using-qmk/hardware-features/feature_split_keyboard
 - Blackberry trackpad, https://vlukash.com/2019/01/15/trackpad-in-keycap-corne-crkbd-keyboard/
 - Adding layers, https://thomasbaart.nl/2018/12/06/qmk-basics-how-to-add-a-layer-to-your-keymap/
 - Layers, https://jayliu50.github.io/qmk-cheatsheet/
+- VIA configurator, https://gist.github.com/nooges/5878b2648b6daeefb5c44d4ec16bf912
+
 
 ## Build Logs
 
@@ -269,3 +276,10 @@ Finished!
 
 <img width="650" src="/images/finished.png">
 
+### 20200629
+
+My first day using UNK at work, https://www.youtube.com/watch?v=z-LAlFVbLv8. This is the first time ever I typed on split keyboard for long hours.
+
+<img width="650" src="/images/satisfied.jpg">
+
+I also send <a href="https://github.com/qmk/qmk_firmware/pull/9571">pull request</a> to QMK to register UNK under handwired section.
