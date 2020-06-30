@@ -1,5 +1,7 @@
 # UNK
 
+<a href="https://github.com/qmk/qmk_firmware/"><img width="200" src="https://qmk.131719.xyz/assets/images/badge-dark.svg"></a>
+
 UNK stands for Ultimate Ngoprek Keyboard, my own version of <a href="https://ultimatehackingkeyboard.com/">UHK</a>. Hope this will be my endgame (I know it's a lie) keyboard. ~~This is still a work-in-progress build logs.~~ <a href="https://github.com/herpiko/unk/blob/master/README.md#build-logs">The build logs is nearly complete</a>.
 
 <img width="650" src="/images/finished.png">
@@ -70,15 +72,12 @@ The greens are on the top plate. The oranges are on the bottom.
 
 ## Firmware
 
+UNK firmware code is now registered under QMK's handwired section.
+
 ### Preparation
 ```
 $ git clone https://github.com/qmk/qmk_firmware.git
 $ ./util/qmk_install.sh
-```
-
-Then copy the UNK firmware directory to QMK
-```
-$ cp -vR /path/to/unk/firmware keyboards/handwired/unk
 ```
 
 ### Compile
