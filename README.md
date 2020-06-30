@@ -283,3 +283,8 @@ My first day using UNK at work, https://www.youtube.com/watch?v=z-LAlFVbLv8. Thi
 <img width="650" src="/images/satisfied.jpg">
 
 I also send <a href="https://github.com/qmk/qmk_firmware/pull/9571">pull request</a> to QMK to register UNK under handwired section.
+
+
+### 20200630
+
+<a href="https://github.com/qmk/qmk_firmware/commit/6d6340a82b3ed61f5dd2a40dac78712d7bd736fd">My pull request has been merged.</a> I think the first iteration of UNK keyboard is done for now. Thanks!
