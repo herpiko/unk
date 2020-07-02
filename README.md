@@ -42,7 +42,7 @@ The greens are on the top plate. The oranges are on the bottom.
 2. Pro Micro clone
 3. Tactile switch
 4. TRRS jack
-5. Neodyum magnets
+5. Neodymium magnets
 
 ## Parts
 
@@ -57,7 +57,7 @@ The greens are on the top plate. The oranges are on the bottom.
 | <a href="https://www.tokopedia.com/hpasesoris/m3x6mm-m3-6-black-nylon-hex-nut-m3-thread-female-standoff-spacer-aq21">M3 x 6mm female to female spacer</a>, 30 @ Rp 1.200 | 36.000 |
 | <a href="https://www.tokopedia.com/pcmjakarta/kabel-tunggal-mini-tembaga-0-5mm-40meter">Single copper wire 0.5mm</a>, 40 meter | 30.000 |
 | <a href="https://www.tokopedia.com/stickerkacafilm/stikerstickermotormobilstiker-karboncarbon3d-hitam-dof">Carbon vinyl sticker 30 meter</a> | 45.000 |
-| <a href="https://www.tokopedia.com/kiddiesworld123/magnet-super-neodymium-kepingan-persegi-kotak-ndfeb-20-x-10-x-2-mm">Neodyum super magnet 20 x 10 x 2mm</a>, 16 @ Rp 3.700 | 59.200 |
+| <a href="https://www.tokopedia.com/kiddiesworld123/magnet-super-neodymium-kepingan-persegi-kotak-ndfeb-20-x-10-x-2-mm">Neodymium super magnet 20 x 10 x 2mm</a>, 16 @ Rp 3.700 | 59.200 |
 | <a href="https://www.tokopedia.com/adelioberkah/baut-screw-kecil-m3x3-laptop-hp-toshiba-dell-samsung-asus-acer-lenovo">M3x3mm screw for top plate</a>, 20 @ Rp 3.000 | 60.000 |
 | <a href="https://www.tokopedia.com/crd/m3-x-5mm-button-head-hex-screw-1pcs-baut-hex-m3x5mm-1pcs">M3x5mm hex screw for bottom plate</a>, 30 @ Rp 1.500 | 45.000 |
 | <a href="https://www.bukalapak.com/p/komputer/aksesoris-226/keyboard/6ere8e-jual-wood-wrist-rest-for-tenkeyless-size-mechanical-keyboard-brown">Wood wrist rest for TKL size mechanical keyboard (36cm)</a> | 100.000 |
@@ -163,7 +163,7 @@ I put carbon-like sticker on the inner side of bottom plate to avoid shorting fr
 
 <img width="650" src="/images/split-magnet.png">
 
-Also there were four strong neodyum magnets to help the two parts stick together.
+Also there were four strong neodymium magnets to help the two parts stick together.
 
 <img width="650" src="/images/split-magnet.gif">
 
@@ -202,7 +202,7 @@ I've seen some videos of making handwired keyboard and got some idea for better 
 
 ### 20200624
 
-Need to cut out the height of the switches and stabilizer so I can push the  thickness limit. It'll be using 6mm spacer. The original uncut version is on the left. The middle is the common cut. The right one was forced to be cut like that to make more room for the neodyum magnet.
+Need to cut out the height of the switches and stabilizer so I can push the  thickness limit. It'll be using 6mm spacer. The original uncut version is on the left. The middle is the common cut. The right one was forced to be cut like that to make more room for the neodymium magnet.
 
 <img width="650" src="/images/switch-cut.jpg">
 
@@ -241,7 +241,7 @@ Components placement. Glued with super glue (except for the Pro micros).
 
 <img width="650" src="/images/components-2.jpg">
 
-Bumpons added as rubber foot. Also another neodyum magnet to force the wrist rest stick with the board.
+Bumpons added as rubber foot. Also another neodymium magnet to force the wrist rest stick with the board.
 
 <img width="650" src="/images/bumpon.jpg">
 
@@ -253,7 +253,7 @@ I found an inverted diode and fixed it.
 
 <img width="650" src="/images/inverted-diode.jpg">
 
-Forgot that the neodyum magnet's coating is conductive so I put the sticker on these too.
+Forgot that the neodymium magnet's coating is conductive so I put the sticker on these too.
 
 <img width="650" src="/images/magnet-shorted.png">
 
@@ -286,4 +286,4 @@ I also send <a href="https://github.com/qmk/qmk_firmware/pull/9571">pull request
 
 ### 20200630
 
-<a href="https://github.com/qmk/qmk_firmware/commit/6d6340a82b3ed61f5dd2a40dac78712d7bd736fd">My pull request has been merged.</a> I think the first iteration of UNK keyboard is done for now. Thanks!
+<a href="https://github.com/qmk/qmk_firmware/commit/6d6340a82b3ed61f5dd2a40dac78712d7bd736fd">My pull request has been merged.</a> I think the first iteration of UNK is done for now. Thanks!
