@@ -13,7 +13,7 @@ UNK stands for Ultimate Ngoprek Keyboard, my own version of <a href="https://ult
 - Fully programmable (QMK) ✅
 - Almost zero learning curve (horizontally staggered, ~ortholinear~, ~symbols through modifier/layer~) ✅
 - Ergonomic as UHK (splitted) ✅
-- Generic size of keycaps (combinations from 145 keycaps set should be fitted) 👎
+- Generic size of keycaps (combinations from 104 keycaps set should be fitted) ✅
 - Interchangeable middle modules (touchpad, trackball, smartphone dock) 👎
 
 ## Layout
@@ -22,7 +22,7 @@ UNK stands for Ultimate Ngoprek Keyboard, my own version of <a href="https://ult
 - Left half: http://www.keyboard-layout-editor.com/#/gists/f117f3cbc2d0b1bf17206992068f9017
 - Right half: http://www.keyboard-layout-editor.com/#/gists/e9e79566d1be71f77f1f2d33660011e5
 
-<img src="/images/layout-split.png">
+<img src="/images/layout-split-rev2.png">
 
 ## Plate
 
@@ -30,7 +30,7 @@ Download:
 - <a href="https://github.com/herpiko/unk/raw/master/unk-plate-layout.svg">SVG (Inkscape)</a>
 - ~~<a href="https://github.com/herpiko/ultimate-ngoprek-keyboard/raw/master/split-full-final-cut.ai">Adobe Illustrator</a>~~
 
-<img src="/images/plate-design.png">
+<img src="/images/plate-design-rev2.png">
 
 ## Anatomy
 
