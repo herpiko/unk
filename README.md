@@ -287,3 +287,7 @@ I also send <a href="https://github.com/qmk/qmk_firmware/pull/9571">pull request
 ### 20200630
 
 <a href="https://github.com/qmk/qmk_firmware/commit/6d6340a82b3ed61f5dd2a40dac78712d7bd736fd">My pull request has been merged.</a> I think the first iteration of UNK is done for now. Thanks!
+
+### 20200704
+
+I've updated the layout and plate design. UNK is now supporting 104 keycaps set by resizing its space keys to 2u. `+` and `Ent` keys from the numpad can be used here. On the other hand left `Fn` and `Del` keys got bigger. DSA profile is preferred for best suitability.
