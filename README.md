@@ -48,7 +48,7 @@ The greens are on the top plate. The oranges are on the bottom.
 
 | Item  | Price (rupiah) |
 | ------------- | -------------: |
-| I'm using existing DSA keycaps set from my <a href="https://www.google.com/search?q=vortex+tab+75&source=lnms&tbm=isch">Vortex Tab 75 keyboard</a>.<br/><br/>Alternatives:<br/> - https://www.amazon.com/YMDK-Profile-Minila-Subimation-Keyset/dp/B082D21GRP <br/>- https://www.amazon.com/HK-Gaming-Dye-Sublimation-Keycaps/dp/B08156NG7K/ref=sr_1_12?dchild=1&keywords=dsa+keycaps&qid=1593452374&sr=8-12<br/>*HINT: It should contains 2 extra 2.25u keycaps for the splitted space keys along with an 1.75 shift keycap.* | 0 |
+| I'm using existing DSA keycaps set from my <a href="https://www.google.com/search?q=vortex+tab+75&source=lnms&tbm=isch">Vortex Tab 75 keyboard</a>.<br/><br/>104 keycaps set is now supported. | 0 |
 | <a href="https://www.tokopedia.com/vortexseries/ks-9-gateron-brown-switch-tactile-plate-mounted">Gateron Brown switches</a>, 80 @ Rp 2.400 | 192.000 |
 | <a href="https://www.tokopedia.com/tokopuwei/dioda-in4148-1n-4148-in-4148-dip-diode-1n4148-do35-ac85-harga-1-pcs">IN4148 diodes</a>, 200 @ Rp 100 | 20.000 |
 | <a href="https://www.tokopedia.com/solarperfect/pro-micro-promicro-atmega32u4-16mhz-5v-arduino-module">Pro micro ATMEGA32U4 16Mhz 5V</a>, 2 @ Rp 52.800 | 105.600 |
