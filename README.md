@@ -291,3 +291,11 @@ I also send <a href="https://github.com/qmk/qmk_firmware/pull/9571">pull request
 ### 20200704
 
 I've updated the layout and plate design. UNK is now supporting 104 keycaps set by resizing its space keys to 2u. `+` and `Ent` keys from the numpad can be used here. On the other hand left `Fn` and `Del` keys got bigger. DSA profile is preferred for best suitability.
+
+### 20200706
+
+UNK is now having mini OLED display so I'll know which layer is on. Just like UHK, eh?
+
+<img width="650" src="/images/oled1.png">
+
+<img width="650" src="/images/oled2.png">
