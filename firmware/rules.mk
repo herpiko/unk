@@ -31,5 +31,8 @@ AUDIO_ENABLE = no           # Audio output
 FAUXCLICKY_ENABLE = no      # Use buzzer to emulate clicky switches
 
 SPLIT_KEYBOARD = yes
+SPLIT_COMMUNICATION = serial
+
 
 DEFAULT_FOLDER = handwired/unk/rev1
+OLED_DRIVER_ENABLE = yes

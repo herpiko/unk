@@ -34,7 +34,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 
-#define MASTER_LEFT // Comment this line for the right half firmware
+//#define MASTER_LEFT // Comment this line for the right half firmware
 
 // wiring of each half
 #define MATRIX_ROW_PINS { F5, B1, F6, B3, F7 }
@@ -51,7 +51,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 #define USE_SERIAL
-#define SOFT_SERIAL_PIN D0
+
+// Because we are using OLED on I2C.
+// USE_I2C does not to be defined here since OLED_DRIVER_ENABLE has been set in rules.mk
+#define SOFT_SERIAL_PIN D3
+#define SELECT_SOFT_SERIAL_SPEED 1
 
 /* define if matrix has ghost */
 //#define MATRIX_HAS_GHOST
