@@ -118,6 +118,7 @@ The sources I read and inspired me for building this keyboard:
 - Keyboard layout editor, http://www.keyboard-layout-editor.com/
 - Plate builder, http://builder.swillkb.com/
 - Laser cutting service, https://lasergist.com/shop/lasergist/
+- Acrylic laser cutting service, https://www.tokopedia.com/kencanagrafikama/akrilik-acrylic-3mm-potongan-custom-putih-susu
 - Pro micro official guides/FAQ, https://learn.sparkfun.com/tutorials/pro-micro--fio-v3-hookup-guide/troubleshooting-and-faq
 - Promethium51, https://priyadi.smugmug.com/Mechanical-Keyboard/Promethium-Keyboard/Build-Log/n-4fFNQC
 - Handwiring split guide based on lets_split, https://johannes-jansson.github.io/projects/2018/07/23/hand-wiring-lets-split.html
