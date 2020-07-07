@@ -67,6 +67,7 @@ The greens are on the top plate. The oranges are on the bottom.
 | <a href="https://www.tokopedia.com/herzhz/35mm-trrs-4-pole-for-hifiman-balanced-male-plug-jack-35">3.5mm TRRS 4 pins male plug</a>, 2 @ Rp 12.500 | 25.000 |
 | <a href="https://www.tokopedia.com/optimuspri/joyseus-2-in-1-coiled-data-cable-1-m-micro-usb-type-c">Joyseus 2 in 1 coiled data cable 1M (micro USB & type C)</a> | 45.000 |
 | <a href="https://www.tokopedia.com/3mtapes/3m-sj-5306-bumpon-clear">3M SJ-5306 Bumpon Clear</a> | 18.000 |
+| <a href="https://www.tokopedia.com/isee/new-091-091-inch-inchi-128x32-oled-white-display-lcd-module-slim">128x32 pixel OLED white display</a> | 35.000 |
 
 *The list is excluding shipping cost and wrong parts those I purchased. Some items were purchased more than the need for spare/stockpile. If the whole things counted, it reached almost 2 million rupiahs.*
 
