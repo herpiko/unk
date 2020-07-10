@@ -301,3 +301,8 @@ UNK is now having mini OLED display so I'll know which layer is on. Just like UH
 <img width="650" src="/images/oled1.png">
 
 <img width="650" src="/images/oled2.png">
+
+
+## License
+
+All images and SVG file that I produced are under CC-BY-SA. QMK related code is under GPL. The QMK Firmware logo is a trademark of QMK. 
