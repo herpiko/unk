@@ -9,12 +9,12 @@ UNK stands for Ultimate Ngoprek Keyboard, my own version of <a href="https://ult
 ## Goals
 
 - Cheap 👎
-- As thin as possible (thinner than Vortex Core) 👎
+- As thin as possible (thinner than Vortex Core) ✅
 - Fully programmable (QMK) ✅
 - Almost zero learning curve (horizontally staggered, ~ortholinear~, ~symbols through modifier/layer~) ✅
 - Ergonomic as UHK (splitted) ✅
 - Generic size of keycaps (combinations from 104 keycaps set should be fitted) ✅
-- Interchangeable middle modules (touchpad, trackball, smartphone dock) 👎
+- Interchangeable middle modules (touchpad, ~trackball, smartphone dock~) ✅
 
 ## Layout
 
@@ -302,6 +302,19 @@ UNK is now having mini OLED display so I'll know which layer is on. Just like UH
 
 <img width="650" src="/images/oled2.png">
 
+### 202007018
+
+I made a trackpoint module for the UNK. The trackpoint sensor was taken from a dead Thinkpad X201 keyboard.
+
+<img width="650" src="/images/trackpoint1.jpg">
+
+<img width="650" src="/images/trackpoint2.jpg">
+
+It has two attached mode.
+
+<img width="650" src="/images/trackpoint3.jpg">
+
+<img width="650" src="/images/trackpoint4.jpg">
 
 ## License
 
