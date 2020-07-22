@@ -4,7 +4,7 @@
 
 UNK stands for Ultimate Ngoprek Keyboard, my own version of <a href="https://ultimatehackingkeyboard.com/">UHK</a>. Hope this will be my endgame (I know it's a lie) keyboard. ~~This is still a work-in-progress build logs.~~ <a href="https://github.com/herpiko/unk/blob/master/README.md#build-logs">The build logs is nearly complete</a>.
 
-<img src="/images/unkrev1.png">
+<img src="/images/unkrev1.jpg">
 
 ## Goals
 
