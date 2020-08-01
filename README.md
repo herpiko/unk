@@ -16,13 +16,15 @@ UNK stands for Ultimate Ngoprek Keyboard, my own version of <a href="https://ult
 - Generic size of keycaps (combinations from 104 keycaps set should be fitted) ✅
 - Interchangeable middle modules (touchpad, ~trackball, smartphone dock~) ✅
 
-## Layout
+## Layout (rev2)
+
+This is rev2 layout. I revised it to make it compatible with common 104 keycaps set. If you're looking for the original UNK layout (as seen on the photo above and in the build logs, which is not 100% compatible with 104 keycaps set), <a hre="https://github.com/herpiko/unk/blob/master/unk-plate-layout.rev1.svg">you can grab it here</a>.
 
 http://www.keyboard-layout-editor.com/#/gists/457787e3b1938c4cbe9d65c7b7bd31ef
 
 <img src="/images/unk-layout-rev2.png">
 
-## Plate
+## Plate (rev2)
 
 Download:
 - <a href="https://github.com/herpiko/unk/raw/master/unk-plate-layout.rev2.svg">SVG (Inkscape)</a>
