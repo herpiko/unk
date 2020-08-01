@@ -18,9 +18,7 @@ UNK stands for Ultimate Ngoprek Keyboard, my own version of <a href="https://ult
 
 ## Layout
 
-- Combined : http://www.keyboard-layout-editor.com/#/gists/457787e3b1938c4cbe9d65c7b7bd31ef
-- Left half: http://www.keyboard-layout-editor.com/#/gists/f117f3cbc2d0b1bf17206992068f9017
-- Right half: http://www.keyboard-layout-editor.com/#/gists/e9e79566d1be71f77f1f2d33660011e5
+http://www.keyboard-layout-editor.com/#/gists/457787e3b1938c4cbe9d65c7b7bd31ef
 
 <img src="/images/unk-layout-rev2.png">
 
@@ -39,7 +37,7 @@ There SVG is fragmented to few layers:
 
 ## Anatomy
 
-<img src="/images/component-anatomy.png" width="300">
+<img src="/images/component-anatomy.png" width="400">
 
 The greens are on the top plate. The oranges are on the bottom.
 
