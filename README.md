@@ -22,13 +22,12 @@ UNK stands for Ultimate Ngoprek Keyboard, my own version of <a href="https://ult
 - Left half: http://www.keyboard-layout-editor.com/#/gists/f117f3cbc2d0b1bf17206992068f9017
 - Right half: http://www.keyboard-layout-editor.com/#/gists/e9e79566d1be71f77f1f2d33660011e5
 
-<img src="/images/layout-split-rev2.png">
+<img src="/images/plate-layout-rev2.png">
 
 ## Plate
 
 Download:
-- <a href="https://github.com/herpiko/unk/raw/master/unk-plate-layout.svg">SVG (Inkscape)</a>
-- ~~<a href="https://github.com/herpiko/ultimate-ngoprek-keyboard/raw/master/split-full-final-cut.ai">Adobe Illustrator</a>~~
+- <a href="https://github.com/herpiko/unk/raw/master/unk-plate-layout.rev.2svg">SVG (Inkscape)</a>
 
 <img src="/images/plate-design-rev2.png">
 
