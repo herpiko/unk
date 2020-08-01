@@ -29,7 +29,7 @@ http://www.keyboard-layout-editor.com/#/gists/457787e3b1938c4cbe9d65c7b7bd31ef
 Download:
 - <a href="https://github.com/herpiko/unk/raw/master/unk-plate-layout.rev2.svg">SVG (Inkscape)</a>
 
-There SVG is fragmented to few layers: 
+The SVG file is fragmented to few locked layers: 
 - Components
 - SandwichCase
 - TopPlate
