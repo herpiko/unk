@@ -22,18 +22,24 @@ UNK stands for Ultimate Ngoprek Keyboard, my own version of <a href="https://ult
 - Left half: http://www.keyboard-layout-editor.com/#/gists/f117f3cbc2d0b1bf17206992068f9017
 - Right half: http://www.keyboard-layout-editor.com/#/gists/e9e79566d1be71f77f1f2d33660011e5
 
-<img src="/images/plate-layout-rev2.png">
+<img src="/images/unk-layout-rev2.png">
 
 ## Plate
 
 Download:
 - <a href="https://github.com/herpiko/unk/raw/master/unk-plate-layout.rev2.svg">SVG (Inkscape)</a>
 
+There SVG is fragmented to few layers: 
+- Components
+- SandwichCase
+- TopPlate
+- BottomPlate
+
 <img src="/images/plate-layout-rev-2.png">
 
 ## Anatomy
 
-<img src="/images/component-anatomy.png">
+<img src="/images/component-anatomy.png" width="300">
 
 The greens are on the top plate. The oranges are on the bottom.
 
