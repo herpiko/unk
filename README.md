@@ -27,9 +27,9 @@ UNK stands for Ultimate Ngoprek Keyboard, my own version of <a href="https://ult
 ## Plate
 
 Download:
-- <a href="https://github.com/herpiko/unk/raw/master/unk-plate-layout.rev.2svg">SVG (Inkscape)</a>
+- <a href="https://github.com/herpiko/unk/raw/master/unk-plate-layout.rev2.svg">SVG (Inkscape)</a>
 
-<img src="/images/plate-design-rev2.png">
+<img src="/images/plate-layout-rev-2.png">
 
 ## Anatomy
 
