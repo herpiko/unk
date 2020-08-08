@@ -321,6 +321,8 @@ It has two attached mode.
 
 <img width="650" src="/images/trackpoint4.jpg">
 
-## License
+## Disclaimer and License
+
+I'm not responsible for the inaccuracy of the build that based on my design. I've tested it but it may has different result on yours.
 
 All images and SVG file that I produced are under CC-BY-SA. QMK related code is under GPL. The QMK Firmware logo is a trademark of QMK. 
