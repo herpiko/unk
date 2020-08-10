@@ -137,6 +137,7 @@ The sources I read and inspired me for building this keyboard:
   - https://github.com/alonswartz/trackpoint#tmk-firmware-changes-and-tweaks
   - https://docs.qmk.fm/#/feature_ps2_mouse
   - https://deskthority.net/wiki/TrackPoint_Hardware#ThinkPad_R61_TrackPoint
+  - https://community.keyboard.io/t/trackpoint-mod-ii-a-new-guide/3663
 - Pro micro built-in LEDs, https://www.electronicsweekly.com/blogs/engineer-in-wonderland/arduino-micro-direct-access-board-leds-2017-08/
 - TRRS in  Pro Micro + QMK, https://beta.docs.qmk.fm/using-qmk/hardware-features/feature_split_keyboard
 - Blackberry trackpad, https://vlukash.com/2019/01/15/trackpad-in-keycap-corne-crkbd-keyboard/
