@@ -2,7 +2,13 @@
 
 <a href="https://github.com/qmk/qmk_firmware/"><img width="200" src="https://qmk.131719.xyz/assets/images/badge-dark.svg"></a>
 
-UNK stands for Ultimate Ngoprek Keyboard, my own version of <a href="https://ultimatehackingkeyboard.com/">UHK</a>. Hope this will be my endgame (I know it's a lie) keyboard. ~~This is still a work-in-progress build logs.~~ <a href="https://github.com/herpiko/unk/blob/master/README.md#build-logs">The build logs is nearly complete</a>.
+UNK stands for Ultimate Ngoprek Keyboard, my own version of <a href="https://ultimatehackingkeyboard.com/">UHK</a>. You can read the build log <a href="https://github.com/herpiko/unk#build-logs">here</a>.
+
+I still want the original UHK but can't afford it for now. It's an expensive keyboard, the shipping cost alone is crazy 🙈. If you like this project and you want to <a href="https://karyakarsa.com/herpiko">buy me a coffe</a>, I'll be glad 😉.
+
+If you are building one yourself and encountered any issue, feel free to open an issue in this GitHub repository. I'll respond ASAP.
+
+I love building things. If you want this keyboard and  have resources (e.g. money) but don't have time to deal with tin, cables and failures, I can help you to build one. By doing this, you're supporting me to iterate the UNK into a better version. Please to reach me at herpiko@gmail.com.
 
 <img src="/images/unkrev1.jpg">
 
@@ -18,7 +24,7 @@ UNK stands for Ultimate Ngoprek Keyboard, my own version of <a href="https://ult
 
 ## Layout (rev2)
 
-This is rev2 layout. I revised it to make it compatible with common 104 keycaps set. If you're looking for the original UNK layout (as seen on the photo above and in the build logs, which is not 100% compatible with 104 keycaps set), <a href="https://github.com/herpiko/unk/blob/master/unk-plate-layout.rev1.svg">you can grab it here</a>.
+This is rev2 layout. I revised it to make it compatible with common 104 keycaps set. If you're looking for the original UNK layout (as seen on the photo above and in the build logs, which is not 100% compatible with 104 keycaps set), <a href="https://github.com/herpiko/unk/blob/master/unk-plate-layout.rev1.1.svg">you can grab it here</a>.
 
 http://www.keyboard-layout-editor.com/#/gists/457787e3b1938c4cbe9d65c7b7bd31ef
 
@@ -29,7 +35,7 @@ http://www.keyboard-layout-editor.com/#/gists/457787e3b1938c4cbe9d65c7b7bd31ef
 Download:
 - <a href="https://github.com/herpiko/unk/raw/master/unk-plate-layout.rev2.svg">SVG (Inkscape)</a>
 
-The SVG file is fragmented to few locked layers: 
+The SVG file is fragmented to few locked layers:
 - Components
 - SandwichCase
 - TopPlate
@@ -114,8 +120,8 @@ $ sudo avrdude -p atmega32u4 -c avr109 -U ./.build/handwired_unk_rev1_default.he
 ```
 ## Usage
 
-- `Layer` + `Home` to switch to Qwerty layout
-- `Layer` + `End` to switch to Colemak layout
+- `LOWER` + `Home` to switch to Qwerty layout
+- `LOWER` + `End` to switch to Colemak layout
 
 ## Useful links
 
@@ -322,8 +328,19 @@ It has two attached mode.
 
 <img width="650" src="/images/trackpoint4.jpg">
 
+### 20230318
+
+After two years of extensive use, the switches eventually fail because of dust. I got tempted to replace the troubled switches but found that it's not easy to remove the hot glue. The original hole is 14.1mm and it's too loose for the switches. That is why hot glue came in. After thinking about it for a while, I decided to start over and revise the hole size to 13.7mm so it will be stiff enough to hold the switches.
+
+You can find the revised SVG here https://github.com/herpiko/unk/blob/master/unk-plate-layout.rev1.1.svg.
+
+I also replaced the Cherry MX Brown switches with Kailh Box. Kailh Box have some advantages over the MX Brown:
+- Less tactile, which is my preference
+- IP56 water and dust proof. The protection is done by two layer: first is the boxy keycap stem that prevent dust coming into the switch, the second is the gold crosspoint part got surrounded by a plastic box and exposing only the tiny part that will be touched by keycap stem
+- The bottom housing is shorter and fit nicely under 6mm space between the two plates.
+
 ## Disclaimer and License
 
-I'm not responsible for the inaccuracy of the build that based on my design. I've tested it but it may has different result on yours.
+I'm not responsible for the inaccuracy of the build that based on my design. I've tested it but your mileage may vary.
 
-All images and SVG file that I produced are under CC-BY-SA. QMK related code is under GPL. The QMK Firmware logo is a trademark of QMK. 
+All images and SVG file that I produced are under CC-BY-SA. QMK related code is under GPL. The QMK Firmware logo is a trademark of QMK.
