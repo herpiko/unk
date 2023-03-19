@@ -322,9 +322,13 @@ I made a trackpoint module for the UNK. The trackpoint sensor was taken from a d
 
 <img width="650" src="/images/trackpoint2.jpg">
 
-It has two attached mode.
+It has two attached mode:
+
+#### By using your index finger
 
 <img width="650" src="/images/trackpoint3.jpg">
+
+#### By using your thumb
 
 <img width="650" src="/images/trackpoint4.jpg">
 
@@ -334,13 +338,17 @@ After two years of extensive use, the switches eventually fail because of dust. 
 
 You can find the revised SVG here https://github.com/herpiko/unk/blob/master/unk-plate-layout.rev1.1.svg.
 
-I also replaced the Cherry MX Brown switches with Kailh Box. Kailh Box have some advantages over the MX Brown:
+I also replaced the Cherry MX Brown switches with Kailh Box which is have some advantages over the previous one:
 - Less tactile, which is my preference
-- IP56 water and dust proof. The protection is done by two layer: first is the boxy keycap stem that prevent dust coming into the switch, the second is the gold crosspoint part got surrounded by a plastic box and exposing only the tiny part that will be touched by keycap stem
-- The bottom housing is shorter and fit nicely under 6mm space between the two plates.
+- IP56 water and dust proof. The protection is done by two brilliant solutions:
+  - The boxy keycap stem prevents dust coming into the switch.
+  - The gold crosspoint part got surrounded by a plastic box and exposing only the tiny part that will be touched by keycap stem.
+- The bottom housing is shorter and fit nicely under 6mm space between the two plates. I don't have to cut the bottom part anymore.
 
-## Disclaimer and License
+## Disclaimer
 
 I'm not responsible for the inaccuracy of the build that based on my design. I've tested it but your mileage may vary.
+
+## License
 
 All images and SVG file that I produced are under CC-BY-SA. QMK related code is under GPL. The QMK Firmware logo is a trademark of QMK.
