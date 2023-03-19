@@ -326,11 +326,11 @@ It has two attached mode:
 
 #### By using your index finger
 
-<img width="650" src="/images/trackpoint3.jpg">
+<img width="650" src="/images/trackpoint4.jpg">
 
 #### By using your thumb
 
-<img width="650" src="/images/trackpoint4.jpg">
+<img width="650" src="/images/trackpoint3.jpg">
 
 ### 20230318
 
