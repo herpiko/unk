@@ -28,30 +28,34 @@ enum custom_keycodes {
 // Layer names don't all need to be of the same length, obviously, and you can also skip them
 // entirely and just use numbers.
 
+// Guide
+// - Press LOWER + HOME to switch to Qwerty
+// - Press LOWER + END to switch to Colemak
+
 bool isColemak = false;
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_QWERTY] = LAYOUT(
-    KC_ESC,     KC_GRV,    KC_1,    KC_2,    KC_3,    KC_4,      KC_5,   KC_6,                   KC_7,    KC_8,      KC_9,    KC_0,    KC_MINS,    KC_EQL,     KC_BSPACE, 
-    KC_HOME,    KC_TAB,    KC_Q,    KC_W,    KC_E,    KC_R,      KC_T,                  KC_Y,    KC_U,    KC_I,      KC_O,    KC_P,    KC_LBRC,    KC_RBRC,    KC_BSLASH,
-    KC_END,     KC_BSPACE, KC_A,    KC_S,    KC_D,    KC_F,      KC_G,                           KC_H,    KC_J,      KC_K,    KC_L,    KC_SCLN,    KC_QUOT,    KC_ENT,
-    KC_PSCREEN, KC_LSFT,   KC_Z,    KC_X,    KC_C,    KC_V,      KC_B,                           KC_N,    KC_M,      KC_COMM, KC_DOT,  KC_SLSH,    KC_LSFT,    KC_PGUP,
-    LOWER,      KC_LCTL,   KC_LALT, KC_LGUI, LOWER,   KC_SPACE,                                           KC_SPACE,  RAISE,   KC_RALT, KC_RCTL,    KC_DELETE,  KC_PGDOWN
+    KC_ESC,          KC_GRV,    KC_1,    KC_2,    KC_3,    KC_4,      KC_5,   KC_6,                   KC_7,    KC_8,      KC_9,    KC_0,    KC_MINS,    KC_EQL,     KC_BACKSPACE, 
+    KC_HOME,         KC_TAB,    KC_Q,    KC_W,    KC_E,    KC_R,      KC_T,                  KC_Y,    KC_U,    KC_I,      KC_O,    KC_P,    KC_LBRC,    KC_RBRC,    KC_BACKSLASH,
+    KC_END,          KC_LCTL,   KC_A,    KC_S,    KC_D,    KC_F,      KC_G,                           KC_H,    KC_J,      KC_K,    KC_L,    KC_SCLN,    KC_QUOT,    KC_ENT,
+    KC_PRINT_SCREEN, KC_LSFT,   KC_Z,    KC_X,    KC_C,    KC_V,      KC_B,                           KC_N,    KC_M,      KC_COMM, KC_DOT,  KC_SLSH,    KC_LSFT,    KC_PAGE_UP,
+    LOWER,           KC_LCTL,   KC_LALT, KC_LGUI, LOWER,   KC_SPACE,                                           KC_SPACE,  RAISE,   KC_RALT, KC_RCTL,    KC_DELETE,  KC_PAGE_DOWN
   ),
   [_COLEMAK] = LAYOUT(
-    KC_ESC,     KC_GRV,    KC_1,    KC_2,    KC_3,    KC_4,     KC_5,   KC_6,                  KC_7,    KC_8,      KC_9,    KC_0,    KC_MINS,    KC_EQL,     KC_BSPACE, 
-    KC_HOME,    KC_TAB,    KC_Q,    KC_W,    KC_F,    KC_P,     KC_G,                 KC_J,    KC_L,    KC_U,      KC_Y,    KC_SCLN, KC_LBRC,    KC_RBRC,    KC_BSLASH,
-    KC_END,     KC_BSPACE, KC_A,    KC_R,    KC_S,    KC_T,     KC_D,                          KC_H,    KC_N,      KC_E,    KC_I,    KC_O,       KC_QUOT,    KC_ENT,
-    KC_PSCREEN, KC_LSFT,   KC_Z,    KC_X,    KC_C,    KC_V,     KC_B,                          KC_K,    KC_M,      KC_COMM, KC_DOT,  KC_SLSH,    KC_LSFT,    KC_PGUP,
-    LOWER,      KC_LCTL,   KC_LALT, KC_LGUI, LOWER,   KC_SPACE,                                         KC_SPACE,  RAISE,   KC_RALT, KC_RCTL,    KC_DELETE,  KC_PGDOWN
+    KC_ESC,          KC_GRV,    KC_1,    KC_2,    KC_3,    KC_4,     KC_5,   KC_6,                  KC_7,    KC_8,      KC_9,    KC_0,    KC_MINS,    KC_EQL,     KC_BACKSPACE, 
+    KC_HOME,         KC_TAB,    KC_Q,    KC_W,    KC_F,    KC_P,     KC_G,                 KC_J,    KC_L,    KC_U,      KC_Y,    KC_SCLN, KC_LBRC,    KC_RBRC,    KC_BACKSLASH,
+    KC_END,          KC_LCTL,   KC_A,    KC_R,    KC_S,    KC_T,     KC_D,                          KC_H,    KC_N,      KC_E,    KC_I,    KC_O,       KC_QUOT,    KC_ENT,
+    KC_PRINT_SCREEN, KC_LSFT,   KC_Z,    KC_X,    KC_C,    KC_V,     KC_B,                          KC_K,    KC_M,      KC_COMM, KC_DOT,  KC_SLSH,    KC_LSFT,    KC_PAGE_UP,
+    ADJUST,           KC_LCTL,   KC_LALT, KC_LGUI, LOWER,   KC_SPACE,                                         KC_SPACE,  RAISE,   KC_RALT, KC_RCTL,    KC_DELETE,  KC_PAGE_DOWN
   ),
 
   [_LOWER] = LAYOUT(
-    _______, _______, _______, _______, _______,  _______, _______, _______,                    _______,    _______,    _______,    _______,     _______,    _______, _______,
-    QWERTY,  _______, _______, _______, _______,  _______, _______,                    _______, KC_MS_WH_UP,    KC_MS_UP, KC_MS_WH_DOWN,    _______,     _______,    _______, _______,
-    COLEMAK, KC_MS_ACCEL2, _______, _______, _______,  _______, _______,                             KC_MS_BTN1, KC_MS_LEFT, KC_MS_DOWN, KC_MS_RIGHT, KC_MS_BTN2, _______, _______,
-    _______, _______, _______, _______, _______,  _______, _______,                        _______,    KC_PGUP,    _______,    KC_PGDOWN,   _______,    _______, KC__VOLUP, 
-    _______, _______, _______, _______, _______,  _______,                                                  KC_MS_BTN1, _______,    _______,     _______,    _______, KC__VOLDOWN
+    _______, _______,      _______, _______, _______,  _______, _______, _______,                    _______,      _______,   _______,       _______,      _______,    _______, _______,
+    QWERTY,  _______,      _______, _______, _______,  _______, _______,                    _______, KC_MS_WH_UP, KC_MS_UP,   KC_MS_WH_DOWN, _______,      _______,    _______, _______,
+    COLEMAK, KC_MS_ACCEL2, _______, _______, _______,  _______, _______,                             KC_MS_BTN1,  KC_MS_LEFT, KC_MS_DOWN,    KC_MS_RIGHT,  KC_MS_BTN2, _______, _______,
+    _______, _______,      _______, _______, _______,  _______, _______,                             _______,     KC_PAGE_UP, _______,       KC_PAGE_DOWN, _______,    _______, KC_VOLU, 
+    _______, _______,      _______, _______, _______,  _______,                                                   KC_MS_BTN1, _______,       _______,      _______,    _______, KC_VOLD
   ),
 
   [_RAISE] = LAYOUT(
@@ -93,14 +97,18 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   return true;
 }
 
-#ifdef OLED_DRIVER_ENABLE
-void oled_task_user(void) {
+#ifdef OLED_ENABLE
+oled_rotation_t oled_init_user(oled_rotation_t rotation) {
+    return OLED_ROTATION_180;
+}
+bool oled_task_user(void) {
     // Host Keyboard Layer Status
     if (isColemak == true) {
         oled_write_P(PSTR("C O L E M A K"), false);
     } else {
         oled_write_P(PSTR("Q W E R T Y  "), false);
     }
-    oled_write_P(PSTR("\n\nUNK\nbuild 606551d rev1"), false);
+    oled_write_P(PSTR("\n\nUNK\nbuild 00b855 rev1.2"), false);
+    return false;
 }
 #endif
