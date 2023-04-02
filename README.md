@@ -84,7 +84,7 @@ The greens are on the top plate. The oranges are on the bottom.
 
 ## Firmware
 
-UNK firmware code is now registered under QMK's handwired section.
+UNK firmware code is now registered under QMK's handwired section. In case you want to tweak it yourself, the code is under `./keyboards/handwired/unk`
 
 ### Preparation
 ```
@@ -92,32 +92,23 @@ $ git clone https://github.com/qmk/qmk_firmware.git
 $ ./util/qmk_install.sh
 ```
 
-### Compile
-```
-$ make handwired/unk/rev1:default
-```
-
 ### Flashing the left half
 
-Press the reset button twice and fast, then:
 ```
-$ sudo avrdude -p atmega32u4 -c avr109 -U ./.build/handwired_unk_rev1_default.hex -P /dev/ttyACM0
+$ qmk flash -kb handwired/unk -km default -bl avrdude-split-left
 
 ```
+
+Then press the reset button twice and fast.
 
 ### Flashing the right half
 
-Uncomment the line that state `#define MASTER_LEFT` in `keyboards/handwired/unk/rev1/config.h`, then:
-
 ```
-$ make handwired/unk/rev1:default
+$ qmk flash -kb handwired/unk -km default -bl avrdude-split-right
 ```
 
-Press the reset button twice and fast, then:
+Then press the reset button twice and fast.
 
-```
-$ sudo avrdude -p atmega32u4 -c avr109 -U ./.build/handwired_unk_rev1_default.hex -P /dev/ttyACM0
-```
 ## Usage
 
 - `LOWER` + `Home` to switch to Qwerty layout
